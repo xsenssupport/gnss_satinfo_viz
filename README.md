@@ -4,6 +4,7 @@ Real-time GNSS satellite signal strength visualizer for ROS 2.
 Subscribes to `/gnss/satinfo` (`GnssSatInfo`) and displays a live bar chart
 colour-coded by satellite status -- matching the u-center satellite view style.
 
+![GNSS Satellite Status Bar Chart](gnss_satinfo.png)
 
 ---
 
@@ -34,6 +35,8 @@ Using **MT Manager** on a Windows or Linux x86x64 PC
 2. Go to **Device Settings > Output Configuration**.
 3. Find and enable **SatInfo** in the output list.
 4. Write the configuration to the device.
+
+![MTi-680G Output Configuration](mti-680g_output_configuration.png)
 
 This tells the sensor to include raw GNSS satellite information in its data
 output, which the ROS 2 driver will publish as the `GnssSatInfo` message.
